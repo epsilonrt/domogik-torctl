@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeLite_Workspace Name="dmg-torctl" Database="" Version="10.0.0">
+  <Project Name="dmg-torctl" Path="dmg-torctl.project" Active="Yes"/>
+  <Project Name="dmg-torctl-init" Path="init/dmg-torctl-init.project" Active="No"/>
+  <BuildMatrix>
+    <WorkspaceConfiguration Name="Debug" Selected="yes">
+      <Environment/>
+      <Project Name="dmg-torctl" ConfigName="Debug"/>
+      <Project Name="dmg-torctl-init" ConfigName="Debug"/>
+    </WorkspaceConfiguration>
+    <WorkspaceConfiguration Name="Release" Selected="yes">
+      <Environment/>
+      <Project Name="dmg-torctl" ConfigName="Release"/>
+      <Project Name="dmg-torctl-init" ConfigName="Release"/>
+    </WorkspaceConfiguration>
+  </BuildMatrix>
+</CodeLite_Workspace>
