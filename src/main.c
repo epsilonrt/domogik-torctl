@@ -28,7 +28,7 @@ static bool bMainIsRun = true;
 /* private functions ======================================================== */
 static void
 prvPrintUsage (void) {
-  printf ("%s - xPL Teleinformation controller\n", __progname);
+  printf ("%s - xPL On/Off Devices controller\n", __progname);
   printf ("Copyright (c) 2016-2017 epsilonRT\n\n");
   printf ("Usage: %s [-i interface] [-n iolayer] [-W timeout] [-D] [-d] [-h]\n", __progname);
   printf ("  -i interface - use interface named interface (i.e. eth0) as network interface\n");

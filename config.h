@@ -38,12 +38,13 @@ extern "C" {
 #define DMG_TORCTL_PORTPINS {{ .num = GPIO23, .act = 1 }, { .num = GPIO8,  .act = 0 }} 
 #define DMG_TORCTL_CONFIG_NAME "output"
 #define DMG_TORCTL_CONFIG { "ecs:ptec:hc:hp:", "warn:adsp:on:off:" }
-#elif defined(BOARD_NANOPI)
+
+#elif defined(BOARD_NANOPI_NEO)
 // -----------------------------------------------------------------------------
 #include <sysio/nanopi.h>
 #define DMG_TORCTL_PORTSIZE      3
 /* RL1-3  : broche GPIOA3,A2,A0, active à l'état haut... */
-#define DMG_TORCTL_PORTPINS {{ .num = GPIOA3, .act = 1 },{ .num = GPIOA2, .act = 1 },{ .num = GPIOA0, .act = 1 }} 
+#define DMG_TORCTL_PORTPINS {{ .num = GPIO_A3, .act = 1 },{ .num = GPIO_A2, .act = 1 },{ .num = GPIO_A0, .act = 1 }} 
 #define DMG_TORCTL_CONFIG_NAME "output"
 #define DMG_TORCTL_CONFIG { "rl1", "rl2", "rl3" }
 #else
