@@ -126,8 +126,6 @@ COPY = cp
 #-------------------------------------------------------------------------------
 # !!!!!!!!!!!!!!!!!         DO NOT EDIT BELOW THIS LINE        !!!!!!!!!!!!!!!!!
 #-------------------------------------------------------------------------------
-3RDPARTY_ROOT=$(GXPL_ROOT)/3rdparty
-VPATH+=:$(3RDPARTY_ROOT)
 $(info Check the target platform, you can use BOARD to force the target...)
 
 HARDWARE_CPU=$(shell hardware-cpu)
@@ -206,12 +204,11 @@ ifeq ($(GXPL_ROOT),)
 $(error GXPL_DEBUG_TEST is On and GXPL_ROOT is not defined, double-check that !)
 else
 include $(GXPL_ROOT)/gxpl.mk
+include $(GXPL_ROOT)/sysio.mk
 endif
 else
-EXTRA_LIBS += gxPL
+EXTRA_LIBS += gxPL sysio
 endif
-
-include $(GXPL_ROOT)/sysio.mk
 
 ifeq ($(PROJECT_TOPDIR),)
 else
