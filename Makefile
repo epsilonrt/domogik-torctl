@@ -1,5 +1,6 @@
 ###############################################################################
-#     Licensed under the Apache License, Version 2.0 (the "License")          #
+# Copyright © 2017 epsilonRT, All rights reserved.                            #
+# This software is governed by the CeCILL license <http://www.cecill.info>    #
 ###############################################################################
 
 # Target file name (without extension).
