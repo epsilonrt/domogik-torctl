@@ -20,9 +20,9 @@ extern "C" {
 #endif
 
 /* constants ================================================================ */
-#define DMG_TORCTL_VENDOR_ID       "domogik"
+#define DMG_TORCTL_VENDOR_ID       "epsirt"
 #define DMG_TORCTL_DEVICE_ID       "torctl"
-#define DMG_TORCTL_CONFIG_FILENAME "domogik-torctl.xpl"
+#define DMG_TORCTL_CONFIG_FILENAME DMG_TORCTL_VENDOR_ID "-" DMG_TORCTL_DEVICE_ID ".xpl"
 #define DMG_TORCTL_INSTANCE_ID     NULL // NULL for auto instance
 #define DMG_TORCTL_DEVICE_VERSION  VERSION_SHORT // VERSION_SHORT is automatically defined in version-git.h from git describe
 #define DMG_TORCTL_LOG_LEVEL       LOG_INFO
